@@ -1,0 +1,32 @@
+body {
+	color: #969AA0;
+	font-family: Inter, serif;
+	font-size: 1.1875rem;
+	background-color: #FFFFFF;
+}
+/* -------- */
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+/* --------- */
+[class*="__container"] {
+	max-width: 83.125rem;
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+	margin: 0 auto;
+}
+main {
+	flex: 1 1 auto;
+}
+h2 {
+	font-family: 'Cardo';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 42px;
+	line-height: 119.047619%; /* 50/42 */
+	text-transform: capitalize;
+	color: #1B3764;
+}

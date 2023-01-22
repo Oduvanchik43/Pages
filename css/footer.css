@@ -1,0 +1,145 @@
+.footer {
+	background: #1B3764;
+}
+.footer__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+/* Content footer */
+.footer__content {
+	display: grid;
+	grid-template-columns: repeat(auto-fill,minmax(17.5rem,1fr));
+	justify-content: space-between;align-items: center;
+	padding: 1.875rem 0 3.75rem 0;
+	gap: 1.5625rem;
+}
+
+.footer__social {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+	gap: 1.25rem;
+	height: 100%;
+}
+.social__block {
+	display: flex;
+	gap: 0.625rem;
+	align-items: center;
+}
+.social__block-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 3.4375rem;
+	min-width: 3.4375rem;
+	border: 0.0625rem solid #FFCA42;
+}
+.social__block-box:hover {
+	transition: all 3s;
+	background-color: #FFCA42;
+}
+
+/* ! FOOTER EXPLORE */
+.footer__explore {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1.5rem;
+}
+.title {
+	font-family: 'Cardo';
+	font-style: normal;
+	font-size: 1.5rem;
+	line-height: 141.666667%; /* 34/24 */
+	letter-spacing: 0.024rem;
+	color: #FFFFFF;
+}
+.footer__menu {
+	display: flex;
+	flex-direction: column;
+	gap: 9px;
+}
+.footer__menu li {
+	position: relative;
+	margin-right:0.625rem;
+	padding-left: 1.875rem;
+}
+.footer__menu li::before {
+	content: '...';
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #FFCA42;
+}
+.explore__link {
+	color: #B4C7E7;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.125rem;
+	line-height: 1.9375rem;
+	letter-spacing: 0.0112rem;
+}
+.footer__pages {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.pages__link {
+	color: #B4C7E7;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.125rem;
+	line-height: 1.9375rem;
+	letter-spacing: 0.0112rem;
+}
+
+.footer__contacts {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	height: 100%;
+}
+.contact__list {
+	display: flex;
+	flex-direction: column;
+	gap: 1.75rem;
+}
+.contact__label {
+	display: flex;
+	color: #B4C7E7;
+	justify-content: space-between;
+	text-align: start;
+	gap: 10px;
+}
+.contact__link {
+	color: #B4C7E7;
+	padding-left: 10px;
+}
+.explore__link:hover,
+.pages__link:hover,
+.contact__link:hover {
+	transition: all 2s;
+	color:#FFCA42;
+}
+
+/* Footer label */
+.footer__label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1.5625rem 0;
+}
+
+
+@media screen and (max-width: 1264.98px) {
+	.social__block-box {
+		min-height: 35px;
+		min-width: 35px;
+	}
+}
