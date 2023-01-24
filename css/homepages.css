@@ -1123,3 +1123,206 @@
 		font-size: 1.5625rem;
 	}
 }
+
+/* ------- */
+/* - Readers - */
+/* ------- */
+
+.readers {
+}
+.readers__container {
+	/* display: flex;
+	gap: 1.875rem;
+	align-items: center; */
+	
+	/* grid-template-columns: repeat(2,minmax(28rem,1fr)); */
+	/* display: grid;
+	grid-auto-flow: row;
+	grid-template: 1fr/488px 1fr;
+	align-items: center;
+	flex-wrap: wrap-reverse; */
+	display: flex;
+	gap: 1.875rem;
+	align-items: center;
+
+
+}
+.readers-text {
+	max-width: 28rem;
+	display: flex;
+	flex-direction: column;
+	gap: 3.125rem;
+}
+.readers-text__title {
+	position: relative;
+}
+.readers-text__title::after {
+	content: '';
+	position: absolute;
+	height: 0.1875rem;
+	width: 3.125rem;
+	bottom: -1.4375rem;
+	left: 0;
+	background-color: #FFCA42;
+}
+.readers-text__desc {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 178.947368%; /* 34/19 */
+	color: #969AA0;
+}
+.readers-text__grades {
+	display: flex;
+	gap: 0.625rem;
+	align-items: center;
+    margin-top: -30px;
+}
+.grades__block {
+	display: flex;
+	gap: 0.3125rem;
+	max-height: 1.25rem;
+}
+.grade {
+	min-width: 1.25rem;
+	min-height: 1.25rem;
+	border-radius: 50%;
+	background: #FFCA42;
+}
+.grade__number {
+	font-family: 'Cardo';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 118.181818%; /* 26/22 */
+	color: #1B3764;
+}
+.grade__overall {
+	margin-top: -2.5rem;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 155.555556%; /* 28/18 */
+	color: #1B3764;
+}
+
+/* cards readers feadback */
+
+.readers-cards {
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-columns: repeat(2,minmax(23.8125rem,1fr));
+	gap: 1.25rem;
+	max-width: 50.125rem;
+}
+.cards {
+}
+/* card feadback */
+.cards-box {
+	display: flex;
+	flex-direction: column;
+	gap: 0.8125rem;
+	padding: 2.1875rem;
+	background: #1B3764;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.11);
+}
+/* card information of readers */
+.cards-box__info {
+	display: flex;
+	gap: 0.625rem;
+}
+.cards-box__info img {
+	max-height: 5.3125rem;
+	max-width: 5.3125rem;
+	border-radius: 20%;
+}
+.cards-box__info-content {
+	display: flex;
+	flex-direction: column;
+	gap: 0.9375rem;
+}
+.info-content {
+}
+.info-content__title {
+	font-family: 'Cardo';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 120.833333%; /* 29/24 */
+	color: #FFFFFF;
+}
+.info-content__grades {
+	display: flex;
+	gap: 0.3125rem;
+}
+.cards-box__text {
+}
+.box__text-title {
+	font-family: 'Cardo';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.375rem;
+	line-height: 150%; /* 33/22 */
+	color: #FFFFFF;
+}
+.box__text-desc {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.125rem;
+	line-height: 161.111111%; /* 29/18 */
+	color: #B4C7E7;
+
+}
+@media (max-width:1155.98px) {
+	.readers__container {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.readers-text {
+		max-width: max-content;
+		width: 80%;
+	}
+}
+
+@media (max-width:825.98px) {
+	.readers-cards {
+		grid-template-columns: 1fr;
+	}
+}
+@media (max-width:500.98px) {
+	.readers-text {
+		width: 100%;
+	}
+}
+@media (max-width:424.98px) {
+	.readers-text__title {
+		font-size: 2.25rem;
+	}
+	.readers-text__desc {
+		font-size: 0.9375rem;
+	}
+	.grade__number {
+		font-size: 1.125rem;
+	}
+	.grade__overall {
+		font-size: 0.9375rem;
+	}
+	.info-content__title {
+		font-size: 1.25rem;
+	}
+	.box__text-title {
+		font-size: 1.125rem;
+	}
+	.box__text-desc {
+		font-size: 0.9375rem;
+	}
+	.cards-box {
+		padding: 1.5625rem;
+	}
+	.cards-box__info-content {
+		gap: 0.3125rem;
+	}
+}
