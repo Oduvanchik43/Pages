@@ -135,7 +135,9 @@
 	align-items: center;
 	padding: 1.5625rem 0;
 }
-
+.text__link {
+	color: #B4C7E7;
+}
 
 @media screen and (max-width: 1264.98px) {
 	.social__block-box {

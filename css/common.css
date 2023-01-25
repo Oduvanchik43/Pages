@@ -30,3 +30,15 @@ h2 {
 	text-transform: capitalize;
 	color: #1B3764;
 }
+
+
+/* -------------------------------- */
+[data-item] {
+	transform: translate(0px, 3.125rem);
+	opacity: 0;
+	transition: all 0.8s;
+}
+[data-item].active {
+	transform: translate(0, 0);
+	opacity: 1;
+}
